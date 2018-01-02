@@ -18,7 +18,7 @@ function getBreweries(contents){
     var list = JSON.parse(contents);
     for(var i = 0; i < list.data.length; i++){
         var brewery = list.data[i].brewery.name;
-        var item = "<div id='item-container' class='col-3'><span id='list-item'>"+brewery+"</span></div>"
+        var item = "<div id='item-container' class='col-3'><span class='list-item'>"+brewery+"</span></div>"
         $('#brewery-list').append(item);
         console.log(brewery);
     }
