@@ -3,8 +3,15 @@
 	right: 55px;
 }
 
-nav{
-	color: #f50000;
+.app-logo{
+	width: 64px;
+	height: 64px;
+}
+
+.logo{
+	font-size: 32px;
+	vertical-align: top;
+	padding-left: 10px;
 }
 
 #submit{
@@ -76,6 +83,7 @@ footer.page-footer{
 
 .footer-link{
 	display: block;
+	color: white;
 }
 
 .footer-img{
