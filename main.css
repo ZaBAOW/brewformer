@@ -70,6 +70,10 @@ footer.page-footer{
 	background-color: rgba(95, 147, 212, 0.72);
 }
 
+.footer-link{
+	display: block;
+}
+
 .footer-img{
 	height: 75px;
 	width: 300px;
