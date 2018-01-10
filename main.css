@@ -1,3 +1,7 @@
+body{
+	opacity: 0.5;
+}
+
 #header{
 	position: relative;
 	right: 55px;
@@ -86,6 +90,10 @@ footer.page-footer{
 	display: block;
 	color: white;
 	width: 100px;
+}
+
+.footer-link:hover{
+	text-decoration: underline;
 }
 
 .footer-img{
