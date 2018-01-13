@@ -66,7 +66,7 @@ function displayBeers(contents, brewery_id, breweryClass){
         var beerDescriptionEdit = beerDescription.replace("'", "&#39")
         var searchBeer = brew.replace(/ /g, '+');
         var searchUrlTemplate = "https://www.google.com/search?q="+searchBeer;
-        var brewTemplate = "<li class='beer-list-item'><a href='"+searchUrlTemplate+"' class='tooltipped' data-position='right' data-delay='50' data-tooltip='"+beerDescriptionEdit+"'>"+brew+"</a></li>";
+        var brewTemplate = "<li class='beer-list-item'><a href='"+searchUrlTemplate+"' class='tooltipped' data-position='right' data-delay='50' title='"+beerDescriptionEdit+"'>"+brew+"</a></li>";
         //append beer item to element with corresponding brewery id.
             $('.'+breweryClass+'-list').append(brewTemplate);
         }
