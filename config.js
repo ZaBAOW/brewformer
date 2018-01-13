@@ -1,4 +1,5 @@
-// config.js
+// config.js is used to initialize api's and other libaries across all html files.
+// this allow the html files to be less crowded with script tag elements.
 
 requirejs.config({
 	baseUrl: 'js',
@@ -22,9 +23,3 @@ requirejs.config({
 require(['jquery', 'velocity'], function ($, Velocity){
 	$("body").velocity({opacity: 0.5});
 });
-
-// require(['jquery'], function ($){
-// 	$(document).ready(function(){
-//         $('[data-toggle="tooltip"]').tooltip();
-//     })
-// });
