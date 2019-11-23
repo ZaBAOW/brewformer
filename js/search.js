@@ -1,12 +1,12 @@
-const BREW_KEY= "bb5091fd74b7944bb27ac0fd535524ef";
+const BREW_KEY= "c606eb818e8a3792eac264e108d50593";
 function search(){
     $('#brewery-list').empty();
     var region = $("#Region").val();
     var city = $("#City").val();
     const proxyurl = "https://cors-anywhere.herokuapp.com/"
-    url = "http://api.brewerydb.com/v2/locations?region="+region+"&locality="+city+"&isPrimary=Y&isClosed=N&key="+BREW_KEY+"&callback="+function(){
+    url = `https://sandbox-api.brewerydb.com/v2/locations?region=${region}&locality=${city}&isPrimay=Y&isClosed=N&key=${BREW_KEY}&callback=`function() {
         return true;
-    }+"?";
+    }`?`;
     fetch(proxyurl + url).then(respones=> respones.text()).then(contents=>getBreweries(contents)).catch(console.log("can't access "+ url + "response. Blocked by browser?"));
 
 }
