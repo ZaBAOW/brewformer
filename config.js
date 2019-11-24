@@ -1,4 +1,5 @@
-// config.js
+// config.js is used to initialize api's and other libaries across all html files.
+// this allow the html files to be less crowded with script tag elements.
 
 requirejs.config({
 	baseUrl: 'js',

@@ -1,18 +1,39 @@
+body{
+	opacity: 0.5;
+}
+
 #header{
 	position: relative;
 	right: 55px;
 }
 
+.app-logo{
+	width: 64px;
+	height: 64px;
+}
+
+.logo{
+	font-size: 32px;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
 #submit{
 	float: left;
+	font-weight: bolder;
 }
 
 #brewery-list{
 
 }
 
-#list-item{
+.list-item{
 	display: inline;
+}
+
+.left-align{
+	color: #000000;
+	font-weight: bold;
 }
 
 #country-field{
@@ -29,14 +50,59 @@
 	margin-left: 60px
 }
 
+#Region{
+	color: #000000;
+}
+
+#City{
+	color: #000000;
+}
+
 #city-field{
 	position: relative;
 	margin-left: 80px
 }
 
-#item-container{
+.item-container{
 	display: inline-block;
 	position: relative;
 	margin-bottom: 20px;
 	left: 75px;
+}
+
+.item-container:hover{
+	box-shadow: 2px 2px;
+}
+
+.beer-list-item:hover{
+	text-decoration: underline;
+}
+
+footer.page-footer{
+	background-color: #777dc49c;
+}
+
+.page-footer .footer-copyright{
+	background-color: rgba(95, 147, 212, 0.72);
+}
+
+.footer-link{
+	display: block;
+	color: white;
+	width: 100px;
+}
+
+.footer-link:hover{
+	text-decoration: underline;
+}
+
+.footer-img{
+	height: 75px;
+	width: 300px;
+	float: right;
+}
+
+
+.material-tooltip > .backdrop {
+	background-color: red;
 }
