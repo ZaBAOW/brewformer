@@ -76,6 +76,6 @@ function displayBeers(contents, brewery_id, breweryClass){
 //function only fires if there is a typo that is found in the text input fields that the user interacts with.
 function errorMessage(error){
     console.log(error);
-    var message = "<span class='error-message'>There seems to be something wrong with your search entry.  Check to see if you have left either field blank or mispelled either your entered state and/or city.</span>"
+    var message = "<span class='error-message'>There seems to be something wrong with your search entry.  Check to see if you have left either field blank or mispelled either your entered state and/or city. Alternatively some cities might not have any breweries yet submitted to the BreweryDB database.</span>"
     $('#error-container').append(message).fadeIn(999);
 }
