@@ -1,6 +1,6 @@
 //search.js contains the main functionality of the search button on BrewFormer.
 
-const BREW_KEY= "c606eb818e8a3792eac264e108d50593";
+const BREW_KEY= "e36933548da991f62ec0d7ec93fad90c";
 
 //search is the fist method to fire after the user clicks the search button.
 //all existing content in both brewery-list and error-container class elements
@@ -12,9 +12,9 @@ function search(){
     var region = $("#Region").val();
     var city = $("#City").val();
     const proxyurl = "https://cors-anywhere.herokuapp.com/"
-    url = `https://sandbox-api.brewerydb.com/v2/locations?region=${region}&locality=${city}&isPrimay=Y&isClosed=N&key=${BREW_KEY}&callback=`function() {
+    url = "http://api.brewerydb.com/v2/locations?region="+region+"&locality="+city+"&isPrimary=Y&isClosed=N&key="+BREW_KEY+"&callback="+function(){
         return true;
-    }`?`;
+    }+"?";
     fetch(proxyurl + url).then(response=> response.text()).then(contents=>getBreweries(contents)).catch(error => errorMessage(error));
 
 }
